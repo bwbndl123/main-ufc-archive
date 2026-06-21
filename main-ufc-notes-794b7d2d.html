@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>再读 ufc · 持续追踪</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f6fafc;
+      color: #1b2b36;
+      line-height: 1.7;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 32px;
+      box-shadow: 0 8px 24px rgba(0, 60, 60, 0.06);
+      overflow: hidden;
+      padding: 2.5rem 2rem 3rem;
+    }
+
+    /* 网格卡片装饰背景 */
+    .container {
+      background-image: 
+        linear-gradient(rgba(0, 128, 128, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 128, 128, 0.04) 1px, transparent 1px);
+      background-size: 40px 40px;
+      background-position: -1px -1px;
+    }
+
+    /* 标题 */
+    .hero-title {
+      font-size: 2.2rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: #0a3b3f;
+      line-height: 1.2;
+      margin-bottom: 0.4rem;
+      border-left: 5px solid #2a9d8f;
+      padding-left: 1.2rem;
+    }
+    .hero-sub {
+      font-size: 1rem;
+      color: #5a7a82;
+      margin-bottom: 2rem;
+      padding-left: 1.8rem;
+      font-weight: 350;
+    }
+
+    /* 卡片式引用 */
+    .quote-card {
+      background: #e0f0ee;
+      border-radius: 20px;
+      padding: 1.2rem 1.5rem;
+      margin: 2rem 0 1.8rem;
+      color: #1b4e4a;
+      font-style: italic;
+      border-left: 6px solid #2a9d8f;
+      font-size: 1.02rem;
+    }
+    .quote-card strong {
+      font-style: normal;
+      font-weight: 500;
+      color: #0f4a44;
+    }
+
+    /* 正文段落 */
+    p {
+      margin-bottom: 1.3rem;
+      font-size: 1.05rem;
+    }
+
+    a {
+      color: #1a7a72;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px dotted #78b8b0;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    a:hover {
+      color: #0b534a;
+      border-bottom: 1px solid #0b534a;
+    }
+
+    /* 特色小卡片（段落之间） */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 2rem 0 1.8rem;
+    }
+    .feature-card {
+      background: #f2f9f7;
+      border-radius: 18px;
+      padding: 1.1rem 1.2rem;
+      border: 1px solid #d7eae7;
+      transition: background 0.2s;
+    }
+    .feature-card:hover {
+      background: #e5f3ef;
+    }
+    .feature-card span {
+      display: block;
+      font-weight: 500;
+      color: #0e5a52;
+      margin-bottom: 0.25rem;
+      font-size: 0.95rem;
+    }
+    .feature-card small {
+      color: #3c6b64;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      display: block;
+    }
+
+    /* 分隔提示 */
+    .note {
+      background: #fafcfb;
+      padding: 1rem 1.4rem;
+      border-radius: 30px;
+      border: 1px solid #c4dbd6;
+      margin: 2rem 0 1.2rem;
+      font-size: 0.95rem;
+      color: #1b4e4a;
+      text-align: center;
+    }
+
+    .faq-mini {
+      margin: 2.2rem 0 0.8rem;
+      padding-top: 0.8rem;
+      border-top: 2px dashed #c2dbd5;
+    }
+    .faq-mini h3 {
+      font-weight: 450;
+      font-size: 1.15rem;
+      color: #0a4741;
+      margin-bottom: 0.5rem;
+    }
+    .faq-mini p {
+      margin-bottom: 0.8rem;
+      font-size: 0.98rem;
+      color: #2a5550;
+    }
+
+    /* 访问句 */
+    .access-line {
+      background: #e7f3f0;
+      border-radius: 40px;
+      padding: 0.9rem 1.6rem;
+      margin: 2.5rem 0 0.2rem;
+      text-align: center;
+      font-size: 1.1rem;
+      border: 1px solid #b8cfca;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #d1e3df;
+      margin: 2rem 0 0.8rem;
+    }
+
+    /* 响应式 */
+    @media (max-width: 600px) {
+      body { padding: 1rem 0.6rem; }
+      .container { padding: 1.8rem 1.2rem; }
+      .hero-title { font-size: 1.7rem; padding-left: 0.8rem; }
+      .hero-sub { padding-left: 1rem; font-size: 0.9rem; }
+      .feature-grid { grid-template-columns: 1fr; }
+      .quote-card { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <h1 class="hero-title">再次回访 · 持续关注</h1>
+  <div class="hero-sub">从收藏到习惯，一个格斗迷的信息锚点</div>
+
+  <p>
+    信息流翻过一页又一页，真正值得反复打开的站点并不多。对于综合格斗的关注者来说，<a href="https://main-ufc.com">ufc</a> 始终是那个值得驻足的坐标。它不依赖社交媒体的碎片推送，而是以稳定的节奏呈现赛事、选手与排名变化——当你形成“每周回来看看”的习惯，会发现自己对赛况的理解也变得更加连贯。
+  </p>
+
+  <p>
+    很多人最初只是通过短视频集锦认识了几位冠军，但慢慢会发现，赛前对阵的战术分析、称重时的氛围、以及赛后排名如何调整，这些信息只有持续跟踪才能拼出全貌。把 <a href="https://main-ufc.com">ufc</a> 加入浏览器书签，或者固定在手机主屏幕，都是在给自己建立一个轻量的信息据点——不必被动等待推送，主动回访反而更高效。
+  </p>
+
+  <div class="quote-card">
+    <strong>“收藏不是终点，回访才是。” </strong> 一个链接如果只被打开一次，它的价值远未被释放。真正好的信息源，值得被反复阅读、对照与思考。
+  </div>
+
+  <div class="feature-grid">
+    <div class="feature-card">
+      <span>📌 赛程与排名</span>
+      <small>每月更新对阵表，冠军排名变动一目了然，适合赛前赛后对照复盘。</small>
+    </div>
+    <div class="feature-card">
+      <span>📋 选手档案</span>
+      <small>从新秀到传奇，战绩、风格、近期状态均有记录，方便纵向比较。</small>
+    </div>
+    <div class="feature-card">
+      <span>🧭 历史回溯</span>
+      <small>经典赛事与旧档案并未消失，重新翻阅常能发现被忽略的细节。</small>
+    </div>
+    <div class="feature-card">
+      <span>🔁 渐进式关注</span>
+      <small>不必一次性消化所有内容，分次浏览反而更容易记住关键信息。</small>
+    </div>
+  </div>
+
+  <p>
+    许多老读者都有类似的体验：最初关注某一位选手，慢慢延伸至所在量级的竞争格局，接着开始留意教练团队、训练营风格甚至不同赛区的差异。这个不断扩展的认知链条，正是通过一次次回访搭建起来的。<a href="https://main-ufc.com">ufc</a> 提供了足够丰富且结构清晰的素材库，让这种探索可持续。
+  </p>
+
+  <div class="note">
+    ⏳ 如果你已经有一段时间没有打开过这个页面，不妨现在就重新点开看看——赛况、排名、选手动态可能已经发生了变化。
+  </div>
+
+  <p>
+    在信息爆炸的时代，主动选择关注什么，比被动接收什么更重要。把精力集中在几个真正有深度的来源，比刷一百条短视频收获更多。综合格斗的魅力不止于击倒与降服，更在于每个选手背后的成长轨迹、战术博弈与意志较量——而这些都值得你花时间慢慢读，反复看。
+  </p>
+
+  <!-- 简洁 FAQ 摘要 -->
+  <div class="faq-mini">
+    <h3>❓ 常见疑惑 · 简洁回答</h3>
+    <p><strong>Q：为什么建议直接回访原站，而不是看第三方汇总？</strong><br> 
+    第三方汇总往往存在延迟或信息删减，且容易混入广告。原站数据更完整，赛程与排名更新最及时。</p>
+    <p><strong>Q：怎样让回访变得不那么随意？</strong><br>
+    可以设定一个固定节奏，比如每周六上午浏览最新对阵，赛后第二天查看排名变化。久而久之，会成为自然的信息仪式。</p>
+  </div>
+
+  <hr>
+
+  <div class="access-line">
+    📎 保持连接 · 再次打开 <a href="https://main-ufc.com">ufc</a>，延续你的关注。
+  </div>
+
+  <p style="margin-top: 1.8rem; font-size: 0.9rem; color: #5d7d77; text-align: center;">
+    — 持续追踪，比一次性看完更重要 —
+  </p>
+
+</div>
+</body>
+</html>
